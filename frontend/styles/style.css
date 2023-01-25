@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background: #dbdbdb;
+}
+
+
+h1, h2{
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: #50A892;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus {
+    outline: 1px solid rgb(65, 147, 255);
+}
+
+input[type="date"]{
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    background: #fff;
+}
+
+.globalimage{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+
+.trip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-card {
+    background: #fff;
+    width: 350px;
+    height: 45vh;
+    padding: 20px;
+    margin: 0 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trip-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-card-right {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 10px 20px
+}
+
+.trip-card-container img {
+    width: 60%;
+}
+
+.separator-green {
+    height: 2px;
+    background: #50A892;
+    width: 80%;
+    margin: 30px;
+}
+
+.trip-card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trip-card .group-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.separator-inputs{
+    height: 1px;
+    width: 98%;
+    background-color: rgb(135, 135, 135);
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.inputs-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-card input {
+    background: #F3F3F4;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    height: 40px;
+    width: 100%;
+    z-index: 100;
+}
+
+input:hover{
+    background: rgb(225, 225, 225);
+}
+
+input::placeholder {
+    color: rgb(68, 68, 68);
+}
+
+
+#search-trip {
+    position: absolute;
+    padding: 12px;
+    bottom: 40px;
+    width: 90%;
+}
+
+
+.trip-box {
+    height: 50px;
+    background: #ffaeae25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#book-btn {
+    padding: 5px 5px;
+}
+
+
+.logo{
+    color: green;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-no-ticket {
+    width: 60%;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-no-ticket p {
+    margin: 10px;
+}
+
+.ticket-list{
+    text-align: center;
+}
+
+.ticket-list p {
+    margin: 20px 0;
+}
+
+
+
+
+.content-container {
+    width: 60%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.content-container .title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.trip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    background: #F7F1F1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.trip span {
+    background:#53A793;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.purchase-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001648;
+    padding: 10px 60px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+#purchase-btn{
+    padding: 10px 20px;
+    background: #53A793;
+    color: #fff;
+    outline: none;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#total-price {
+    color: #fff;
+}
+
+
+.separator {
+    border-top: 1px solid black;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.thanks-booking-msg {
+    text-align: center;
+    margin: 50px 0;
+    color:#53A793;
+}
